@@ -1,0 +1,25 @@
+<div class="container my-5">
+    <h1 class="mb3">   Applications</h1>
+    <table calss="table" *ngIf="employees && employees.length>0">
+        <thead>
+            <tr>
+                <th> C_Id</th>
+                <th>C_Name</th>
+                <th>Application_Name</th>
+                <th>Serverinfo</th>
+                <th>Portinfo</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{employee.C_Id}}</td>
+                <td>{{employee.C_Name}}</td>
+                <td>{{employee.Application_Name}}</td>
+                <td>{{employee.Serverinfo}}</td>
+                <td>{{employee.Portinfo}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <P *ngIf="!employees || employees.length<=0">No employees Found</P>
+</div>

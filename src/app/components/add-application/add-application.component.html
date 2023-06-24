@@ -1,0 +1,31 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New Application</h1>
+    <div class="row">
+        <div class="col-6">
+    <form #form="ngForm" (ngSubmit)="addapplication()">
+        <div class="mb-3">
+          <label for="C_Name" class="form-label">C_Name</label>
+          <input type="text" class="form-control" id="C_Name"
+          name="C_Name" [(ngModel)]="addapprequest.C_Name">
+           </div>
+           <div class="mb-3">
+            <label for="Application_Name" class="form-label">Application_Name</label>
+            <input type="text" class="form-control" id="Application_Name" 
+            name="Application_Name" [(ngModel)]="addapprequest.Application_Name">
+             </div>
+             <div class="mb-3">
+                <label for="Serverinfo" class="form-label">Serverinfo</label>
+                <input type="text" class="form-control" id="Serverinfo"
+                name="Serverinfo" [(ngModel)]="addapprequest.Serverinfo">
+                 </div>
+                 <div class="mb-3">
+                    <label for="Portinfo" class="form-label">Portinfo</label>
+                    <input type="text" class="form-control" id="Portinfo"
+                    name="Portinfo" [(ngModel)]="addapprequest.Portinfo" >
+                     </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+      </div>
+      </div>
+
+</div>
